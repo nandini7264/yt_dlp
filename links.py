@@ -1,3 +1,5 @@
+# fetching recommended video links using a nested loop via one youtube video link that is given
+
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
@@ -65,7 +67,7 @@ while True:
 				print(str(l))
 		
 		except:
-			print("bitch you can")
+			print("try again")
 
 #print(cur.fetchall())
 conn.close()
