@@ -11,6 +11,7 @@
 - [Core Functional Components](#-core-functional-components)
 - [Technologies Used](#-technologies-used)
 - [Project Structure](#-project-structure)
+- [Setup & Run](#-setup--run)
 - [Key Capabilities](#-key-capabilities)
 - [Potential Extensions](#-potential-extensions)
 - [Conclusion](#-conclusion)
@@ -136,6 +137,32 @@ youtube-recommendation-pipeline/
 ├── metadata_extractor.py
 └── README.md
 ```
+
+---
+
+## 🚀 Setup & Run
+
+```bash
+# Clone repository
+git clone https://github.com/your-username/youtube-recommendation-pipeline.git
+cd youtube-recommendation-pipeline
+
+# Create & activate virtual environment (optional but recommended)
+python -m venv venv
+venv\Scripts\activate        # Windows
+source venv/bin/activate     # Mac/Linux
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run pipeline
+python recommendation_crawler.py
+python metadata_extractor.py
+```
+
+After execution, the SQLite database (`data.db`) will contain:
+- `links` → Discovered video URLs  
+- `data1` → Extracted metadata
 
 ---
 
